@@ -1,0 +1,33 @@
+.header {
+  max-width: 880px;
+  margin: auto;
+  padding: 20px;
+  text-align: start;
+}
+
+.header__title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header__subtitle {
+  font-size: 14px;
+  vertical-align: super;
+  color: #ccc;
+}
+
+@media screen and (min-width: 320px) and (max-width: 600px) {
+  .header {
+    padding: 20px 16px;
+    justify-content: center;
+  }
+
+  .header__title {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .header__subtitle {
+    font-size: 12px;
+  }
+}

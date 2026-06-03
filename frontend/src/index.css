@@ -1,0 +1,32 @@
+@import url(./vendor/normalize.css);
+@import url(./vendor/fonts.css);
+@import url(./blocks/header.css);
+@import url(./blocks/popup.css);
+@import url(./blocks/gallery.css);
+@import url(./blocks/card.css);
+@import url(./blocks/profile.css);
+@import url(./blocks/footer.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: black;
+  color: #fff;
+  line-height: 1.5;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}

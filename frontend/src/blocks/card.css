@@ -1,0 +1,60 @@
+.card {
+  position: relative;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card__image {
+  width: 100%;
+  height: 282px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.card__delete-button {
+  position: absolute;
+  top: 18px;
+  right: 15px;
+  width: 18px;
+  height: 19px;
+  border: none;
+  background: transparent url("../images/button/trash-bin.png") center no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.card__description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.card__title {
+  font-size: 24px;
+  font-weight: 900;
+  color: black;
+  max-width: 210px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card__like-button {
+  width: 21px;
+  height: 19px;
+  border: none;
+
+  background-color: transparent;
+  background-image: url("../images/button/Vector.png");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  cursor: pointer;
+}
+
+.card__like-button_active {
+  filter: brightness(0) saturate(100%) invert(18%) sepia(96%) saturate(7473%)
+    hue-rotate(356deg) brightness(97%) contrast(119%);
+}
