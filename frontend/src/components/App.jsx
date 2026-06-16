@@ -70,12 +70,16 @@ function App() {
   // ---------------- DATA ----------------
 
   useEffect(() => {
-    api.getUserInfo().then(setCurrentUser).catch(console.log);
-  }, []);
+    if (isLoggedIn) {
+      api.getUserInfo().then(setCurrentUser).catch(console.log);
+    }
+  }, [isLoggedIn]);
 
   useEffect(() => {
-    api.getInitialCards().then(setCards).catch(console.log);
-  }, []);
+    if (isLoggedIn) {
+      api.getInitialCards().then(setCards).catch(console.log);
+    }
+  }, [isLoggedIn]);
 
   useEffect(() => {
     const token = localStorage.getItem("jwt");
