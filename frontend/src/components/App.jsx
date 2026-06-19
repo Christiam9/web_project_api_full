@@ -3,7 +3,7 @@ import { Routes, Route, useNavigate } from "react-router-dom";
 
 import Header from "./Header/Header";
 import Main from "./Main/Main";
-import Footer from "./Footer/Footer";
+import Footer from "./Foooter/Foooter";
 
 import api from "../utils/api";
 import CurrentUserContext from "../contexts/CurrentUserContext";
