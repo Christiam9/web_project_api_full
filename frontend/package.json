@@ -8,7 +8,8 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "test": "jest"
+    "test": "jest",
+    "deploy": "npm run build && scp -r ./dist/* christiancho0_9@around1:/home/christiancho0_9/web_project_api_full/frontend"
   },
   "dependencies": {
     "react": "^19.2.0",
