@@ -76,7 +76,7 @@ class Api {
 }
 
 const api = new Api({
-  baseUrl: "http://34.10.57.82:3000",
+  baseUrl: "http://34.10.57.82",
   //baseUrl: "http://localhost:3000",
 });
 
