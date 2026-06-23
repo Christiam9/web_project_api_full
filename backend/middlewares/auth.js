@@ -16,7 +16,8 @@ export default (req, res, next) => {
   try {
     payload = jwt.verify(
       token,
-      NODE_ENV === "production" ? JWT_SECRET : "dev-secret",
+      //NODE_ENV === "production" ? JWT_SECRET : "dev-secret",
+      "dev-secret",
     );
   } catch (err) {
     return res.status(403).send({ message: "Token inválido" });

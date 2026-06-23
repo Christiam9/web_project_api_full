@@ -50,9 +50,10 @@ export const login = (req, res, next) => {
 
         const token = jwt.sign(
           { _id: user._id },
-          process.env.NODE_ENV === "production"
+          /** process.env.NODE_ENV === "production"
             ? process.env.JWT_SECRET
-            : "dev-secret",
+            : "dev-secret", **/
+          "dev-secret",
           { expiresIn: "7d" },
         );
 
