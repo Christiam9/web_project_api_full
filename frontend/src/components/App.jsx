@@ -69,7 +69,7 @@ function App() {
   }
 
   // ---------------- DATA ----------------
-
+  /**
   useEffect(() => {
     if (isLoggedIn) {
       api.getUserInfo().then(setCurrentUser).catch(console.log);
@@ -81,6 +81,7 @@ function App() {
       api.getInitialCards().then(setCards).catch(console.log);
     }
   }, [isLoggedIn]);
+  **/
 
   useEffect(() => {
     const token = localStorage.getItem("jwt");
