@@ -13,14 +13,30 @@ import cardsRoutes from "./routes/cards.js";
 
 dotenv.config();
 
+const allowedOrigins = [
+  "https://api.aroun1.chickenkiller.com/",
+  "https://aroun1.chickenkiller.com/",
+  "https://www.aroun1.chickenkiller.com/",
+];
+let cors = require("cors");
+var corsOptions = {
+  origin: function (origin, callback) {
+    if (!origin) return callback(null, true);
+    if (allowedOrigins.indexOf(origin) === -1) {
+      var msg =
+        "The CORS policy for this site does not " +
+        "allow access from the specified Origin.";
+      return callback(new Error(msg), false);
+    }
+    return callback(null, true);
+  },
+  credentials: true,
+  methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"],
+};
+
 const app = express();
-app.use(
-  cors({
-    origin: ["http://34.10.57.82", "http://localhost:3000"],
-    methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
-    allowedHeaders: ["Content-Type", "Authorization"],
-  }),
-);
+app.use(cors({ origin: corsOptions, credentials: true }));
 
 app.use((req, res, next) => {
   console.log("➡️ request:", req.method, req.url);
