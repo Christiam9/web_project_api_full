@@ -1,5 +1,5 @@
-//const BASE_URL = "http://api.aroun1.chickenkiller.com";
-const BASE_URL = "http://34.10.57.82";
+const BASE_URL = "http://api.aroun1.chickenkiller.com";
+//const BASE_URL = "http://34.10.57.82";
 
 function checkResponse(res) {
   if (res.ok) {
