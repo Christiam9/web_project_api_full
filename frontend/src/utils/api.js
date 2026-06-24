@@ -76,7 +76,7 @@ class Api {
 }
 
 const api = new Api({
-  baseUrl: "http://api.aroun1.chickenkiller.com",
+  baseUrl: "https://api.aroun1.chickenkiller.com",
   //baseUrl: "http://34.10.57.82",
   //baseUrl: "http://localhost:3000",
 });
