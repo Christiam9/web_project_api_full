@@ -14,9 +14,9 @@ import cardsRoutes from "./routes/cards.js";
 dotenv.config();
 
 const allowedOrigins = [
-  "https://api.aroun1.chickenkiller.com/",
-  "https://aroun1.chickenkiller.com/",
-  "https://www.aroun1.chickenkiller.com/",
+  "https://api.aroun1.chickenkiller.com",
+  "https://aroun1.chickenkiller.com",
+  "https://www.aroun1.chickenkiller.com",
 ];
 let cors = require("cors");
 var corsOptions = {
