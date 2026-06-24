@@ -36,7 +36,7 @@ var corsOptions = {
 };
 
 const app = express();
-app.use(cors({ origin: corsOptions, credentials: true }));
+app.use(cors(origin));
 
 app.use((req, res, next) => {
   console.log("➡️ request:", req.method, req.url);
