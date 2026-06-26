@@ -41,7 +41,6 @@ const corsOptions = {
 
 const app = express();
 
-// ✅ CORS CORRECTO (ARREGLADO)
 app.use(cors(corsOptions));
 
 // logs
